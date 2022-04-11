@@ -1,0 +1,9 @@
+<div class="row">
+  <ul class="group-list">
+    <a class="group-list-item" style="cursor: pointer;"
+    *ngFor="let book of books"
+    (click)="onSelectedBook(book)">
+      <em>{{ book.title }}</em> by {{ book.author }}
+    </a>
+  </ul>
+</div>
